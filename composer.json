@@ -1,0 +1,22 @@
+{
+    "name": "arcoteste/projetodocker",
+    "description": "Aprendendo sobre Docker",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+        "Treinamento\\Teste\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "joanarozaes",
+            "email": "joanarozaes@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+         "clear": ["rm -f composer.lock", "@composer clear-cache"],
+         "build-app": ["@clear","composer install"]
+    }
+}
